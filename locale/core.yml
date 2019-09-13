@@ -105,7 +105,7 @@ core:
             email_button: '=> core.ref.email'
             email_text: 'Forumunun e-posta ayarlarını yapılandır.'
             extensions_button: Uzantılar
-            extensions_text: 'Kendine özel hale getirmek için forumuna extra işlevsellikler ekle.'
+            extensions_text: 'Forumunuza ekstra işlevsellikler ekleyin ve özelleştirin.'
             permissions_button: İzinler
             permissions_text: 'Kimlerin görebileceğini ve ne yapabileceğini yapılandırın.'
         permissions_controls:
