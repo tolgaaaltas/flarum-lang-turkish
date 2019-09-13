@@ -4,6 +4,7 @@ flarum-markdown:
             bold_tooltip: 'Kalın metin ekle'
             code_tooltip: 'Kod ekle'
             header_tooltip: 'Başlık metni ekle'
+            image_tooltip: 'Resim ekle'
             italic_tooltip: 'Eğik metin ekle'
             link_tooltip: 'Bağlantı ekle'
             ordered_list_tooltip: 'Numaralı liste'
