@@ -196,7 +196,7 @@ core:
             delete_button: '=> core.ref.delete'
             delete_confirmation: 'Bu tartışmayı silmek istediğine emin misin?'
             delete_forever_button: '=> core.ref.delete_forever'
-            log_in_to_reply_button: 'Yanıtlamak için giriş yap'
+            log_in_to_reply_button: 'Yanıt için giriş yap'
             rename_button: '=> core.ref.rename'
             reply_button: '=> core.ref.reply'
             restore_button: '=> core.ref.restore'
