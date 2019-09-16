@@ -12,7 +12,7 @@
             "dev-master": "0.1.x-dev"
         },
         "flarum-extension": {
-            "title": "Turkish",
+            "title": "Turkish Core Pack",
             "icon": {
                 "image": "icon.svg",
                 "backgroundColor": "#00247d",
@@ -22,7 +22,7 @@
         },
         "flarum-locale": {
             "code": "tr",
-            "title": "Turkish"
+            "title": "Turkish Core Pack"
         }
     }
 }
