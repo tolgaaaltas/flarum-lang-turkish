@@ -14,6 +14,14 @@ Just activate the extension.
 ```
 
 
+## Flarum core translation status
+
+| Component | Status |
+| --- | --- |
+| [Core](https://github.com/flarum/core) | [![Translation status](https://weblate.rob006.net/widgets/flarum/tr/core/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/core/tr/) |
+| Validation | [![Translation status](https://weblate.rob006.net/widgets/flarum/tr/validation/svg-badge.svg)](https://weblate.rob006.net/projects/flarum/validation/tr/) |
+
+
 ## Official extensions translation status
 
 <!-- flarum-extensions-list-start -->
