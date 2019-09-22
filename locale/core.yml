@@ -53,6 +53,8 @@ core:
             color_label: '=> core.ref.color'
             delete_button: 'Grubu Sil'
             delete_confirmation: 'Bu grubu silmek istediğine emin misin? Grup üyeleri silinmeyecek.'
+            delete_error_message: "<i>{username} ({email})</i> silinmesi başarısız oldu"
+            delete_success_message: "<i>{username} ({email})</i> başarıyla silindi"
             icon_label: '=> core.ref.icon'
             icon_text: '=> core.ref.icon_text'
             name_label: İsim
@@ -408,13 +410,14 @@ core:
             next_page_button: '=> core.ref.next_page'
             previous_page_button: '=> core.ref.previous_page'
         error:
-            403_message: 'Bu sayfaya erişim iznin yok.'
-            404_message: 'İstediğin sayfa bulunamadı.'
-            404_return_link: '{forum}''a dön'
-            419_message: 'Çok uzun zamandır aktif değilsin.'
-            419_return_link: 'Geri dön ve tekrar dene'
-            500_message: 'Bu sayfa yüklenmeye çalışılırken bir hata oluştu.'
-            503_message: '{forum} bakım altında. Sabrın için teşekkürler!'
+            csrf_token_mismatch: Çok uzun zaman harektsiz kaldın.
+            csrf_token_mismatch_return_link: Geri dön ve tekrar dene
+            invalid_confirmation_token: Bu onaylama bağlantısı zaten kullanılmış veya geçerli değil.
+            not_authenticated: Bu sayfaya erişim izniniz yok, giriş yaptıktan sonra tekrar deneyin.
+            not_found: İstediğiniz sayfa bulunamadı.
+            not_found_return_link: "{forum}'e geri dön"
+            permission_denied: Bu sayfaya erişim izniniz yok.
+            unknown: Sayfa yüklenmeye çalışırken bir hata oluştu.
         index:
             all_discussions_heading: '=> core.ref.all_discussions'
             next_page_button: '=> core.ref.next_page'
