@@ -128,6 +128,7 @@ core:
             delete_posts_forever_label: 'Gönderileri kalıcı olarak sil'
             delete_posts_label: 'Gönderileri sil'
             edit_posts_label: 'Gönderileri düzenle'
+            edit_users_label: 'Kullanıcıları düzenle'
             global_heading: Genel
             moderate_heading: Yönetim
             new_group_button: 'Yeni Grup'
@@ -263,6 +264,7 @@ core:
             discussion_renamed_text: '{username} başlığı değiştirdi'
             empty_text: 'Bildirim Yok'
             mark_all_as_read_tooltip: '=> core.ref.mark_all_as_read'
+            mark_as_read_tooltip: Okundu Olarak İşaretle
             title: '=> core.ref.notifications'
             tooltip: '=> core.ref.notifications'
         post_controls:
