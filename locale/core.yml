@@ -415,7 +415,7 @@ core:
             invalid_confirmation_token: Bu onaylama bağlantısı zaten kullanılmış veya geçerli değil.
             not_authenticated: Bu sayfaya erişim izniniz yok, giriş yaptıktan sonra tekrar deneyin.
             not_found: İstediğiniz sayfa bulunamadı.
-            not_found_return_link: "{forum}'e geri dön"
+            not_found_return_link: "{forum} forumuna geri dön"
             permission_denied: Bu sayfaya erişim izniniz yok.
             unknown: Sayfa yüklenmeye çalışırken bir hata oluştu.
         index:
