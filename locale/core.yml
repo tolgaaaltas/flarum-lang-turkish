@@ -183,7 +183,6 @@ core:
                 {url}
 
                 Şifreni değiştirmek istemiyorsan, bu e-postayı dikkate alma; hiçbir şey olmayacak.
-            subject: '=> core.ref.reset_your_password'
     forum:
         change_email:
             confirm_password_placeholder: '=> core.ref.confirm_password'
