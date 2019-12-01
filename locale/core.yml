@@ -151,42 +151,38 @@ core:
         invalid_username_message: 'Kullanıcı adı sadece harfler, rakamlar ve kısa çizgiler içerebilir.'
     email:
         activate_account:
-            body: |
-				Hey {username} !
-				
-				Birisi (umarım sensindir!) bu e-posta hseabı ile {forum} sitesine kaydoldu.
-				
-				
-				Bu sen isen, hesabını aktifleştirmek için aşağıdaki bağlantıyı tıkla:
-				{url}
-				
-				Eğer sen kaydolmadıysan, bu e-postayı dikkate alma.
-			
             subject: 'Yeni Hesabını Etkinleştir'
+            body: |
+                Hey {username}!
+
+                Birisi (umarım sensindir!) bu e-posta hesabı ile {forum} sitesine kaydoldu.
+
+                Bu sen isen, hesabını aktifleştirmek için aşağıdaki bağlantıyı tıkla:
+                {url}
+
+                Eğer sen kaydolmadıysan, bu e-postayı dikkate alma.
         confirm_email:
-            body: |
-				
-				Hey {username} !
-				
-				Birisi (umarım sensindir!) {forum} sitesindeki hesabının e-posta adresini değiştirdi.
-				
-				Bu sen isen, e-postanı doğrulamak için aşağıdaki bağlantıyı tıkla:
-				{url}
-				
-				Şifreni değiştirmek istemiyorsan, bu e-postayı dikkate alma. 
-				
             subject: 'Yeni E-posta Adresini Doğrula'
-        reset_password:
             body: |
-				Hey {username} !
-				
-				Birisi (umarım sensindir!) {forum} sitesindeki hesabın için şifre sıfırlama talebinde bulundu.
-				
-				Bu sen isen, şifreni sıfırlamak için aşağıdaki bağlantıyı tıkla:
-				{url}
-				
-				Şifreni değiştirmek istemiyorsan, bu e-postayı dikkate alma; hiçbir şey olmayacak.
-				
+                Hey {username}!
+
+                Birisi (umarım sensindir!) {forum} sitesindeki hesabının e-posta adresini değiştirdi.
+
+                Bu sen isen, e-postanı doğrulamak için aşağıdaki bağlantıyı tıkla:
+                {url}
+
+                Şifreni değiştirmek istemiyorsan, bu e-postayı dikkate alma.
+        reset_password:
+            subject: '=> core.ref.reset_your_password'
+            body: |
+                Hey {username}!
+
+                Birisi (umarım sensindir!) {forum} sitesindeki hesabın için şifre sıfırlama talebinde bulundu.
+
+                Bu sen isen, şifreni sıfırlamak için aşağıdaki bağlantıyı tıkla:
+                {url}
+
+                Şifreni değiştirmek istemiyorsan, bu e-postayı dikkate alma; hiçbir şey olmayacak.
             subject: '=> core.ref.reset_your_password'
     forum:
         change_email:
@@ -236,8 +232,8 @@ core:
             empty_text: 'Burada hiç tartışma yok gibi görünüyor.'
             load_more_button: '=> core.ref.load_more'
             mark_as_read_tooltip: 'Okundu olarak işaretle'
-            replied_text: '{username}, {ago} önce yanıtladı'
-            started_text: '{username} {ago} önce başlattı'
+            replied_text: '{username}, {ago} yanıtladı'
+            started_text: '{username} {ago} başlattı'
         edit_user:
             activate_button: 'Kullanıcıyı Etkinleştir'
             email_heading: '=> core.ref.email'
@@ -314,7 +310,7 @@ core:
             time_lapsed_text: '{period} sonra'
         post:
             edited_text: Düzenlendi
-            edited_tooltip: '{username}, {ago} önce düzenledi'
+            edited_tooltip: '{username}, {ago} düzenledi'
             number_tooltip: 'Gönderi #{number}'
         rename_discussion:
             submit_button: '=> core.ref.rename'
@@ -402,7 +398,7 @@ core:
         custom_header_text: 'Sayfanın en üstünde görüntülenecek HTML kodu ekleyin, Flarum''un kendi üstbilgisinin üstünde.'
         custom_header_title: 'Özel Başlığı Düzenle'
         delete: Sil
-        delete_forever: 'Kalııcı Olarak Sil'
+        delete_forever: 'Kalıcı Olarak Sil'
         discussions: Tartışmalar
         edit: Düzenle
         email: E-posta
