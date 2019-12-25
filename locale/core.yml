@@ -16,7 +16,7 @@ core:
             custom_styles_heading: 'Özel Stiller'
             custom_styles_text: 'Flarum''un varsayılan stillerine uygulanacak kendi LESS / CSS kodunu ekleyerek forumununun görünümünü özelleştir.'
             dark_mode_label: 'Karanlık Mod'
-            edit_css_button: 'Özel CSS’i Düzenle'
+            edit_css_button: Özel CSS'yi düzenle
             edit_footer_button: '=> core.ref.custom_footer_title'
             edit_header_button: '=> core.ref.custom_header_title'
             enter_hex_message: 'Lütfen onaltılık bir renk kodu gir.'
@@ -44,7 +44,7 @@ core:
         edit_css:
             customize_text: 'Forumununun görünümünü, Flarum''un <a> varsayılan stillerine </a> uygulanacak kendi LESS / CSS kodunu ekleyerek özelleştir.'
             submit_button: '=> core.ref.save_changes'
-            title: 'Özel CSS’i Düzenle'
+            title: Özel CSS'yi düzenle
         edit_footer:
             customize_text: '=> core.ref.custom_footer_text'
             submit_button: '=> core.ref.save_changes'
@@ -53,8 +53,6 @@ core:
             color_label: '=> core.ref.color'
             delete_button: 'Grubu Sil'
             delete_confirmation: 'Bu grubu silmek istediğine emin misin? Grup üyeleri silinmeyecek.'
-            delete_error_message: "<i>{username} ({email})</i> silinmesi başarısız oldu"
-            delete_success_message: "<i>{username} ({email})</i> başarıyla silindi"
             icon_label: '=> core.ref.icon'
             icon_text: '=> core.ref.icon_text'
             name_label: İsim
