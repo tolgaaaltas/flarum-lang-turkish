@@ -342,6 +342,7 @@ core:
             button: Seçenekler
             delete_button: '=> core.ref.delete'
             delete_confirmation: 'Bu kullanıcıyı silmek istediğinize emin misiniz? Kullanıcının tüm gönderileri silinecek.'
+            delete_success_message: '<i>{username} ({email})</i> adlı kullanıcı silindi'
             edit_button: '=> core.ref.edit'
         user_email_confirmation:
             alert_message: '=> core.ref.confirmation_email_sent'
