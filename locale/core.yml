@@ -422,7 +422,7 @@ core:
         save_changes: 'Değişiklikleri Kaydet'
         settings: Ayarlar
         sign_up: Kaydol
-        some_others: ' diğer {count} kullanıcı| diğer {count} kullanıcı'
+        some_others: ' {count} kullanıcı daha| {count} kullanıcı daha'
         start_a_discussion: 'Bir Tartışma Başlat'
         username: 'Kullanıcı Adı'
         users: Kullanıcılar
