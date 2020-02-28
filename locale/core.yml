@@ -96,7 +96,7 @@ core:
         header:
             log_out_button: '=> core.ref.log_out'
         loading:
-            title: 'Lütfen Bekle...'
+            title: 'Lütfen Bekleyin...'
         nav:
             appearance_button: Görünüm
             appearance_text: 'Forumunun renklerini, logolarını ve diğer değişkenlerini özelleştir.'
