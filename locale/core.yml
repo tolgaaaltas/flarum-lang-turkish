@@ -75,6 +75,7 @@ core:
             mail_encryption_label: Şifreleme
             mail_host_label: Sunucu
             mail_mailgun_domain_label: Alanadı
+            mail_mailgun_region_label: Bölge
             mail_mailgun_secret_label: 'Gizli anahtar'
             mail_mandrill_secret_label: 'Gizli anahtar'
             mail_password_label: '=> core.ref.password'
@@ -85,6 +86,7 @@ core:
             mail_username_label: '=> core.ref.username'
             mailgun_heading: 'Mailgun Ayarları'
             mandrill_heading: 'Mandrill Ayarları'
+            not_sending_message: Flarum şu anda elektronik posta gönderemiyor. Bunun sebebi seçilen sürücü veya yapılandırma hatası olabilir.
             ses_heading: 'SES Ayarları'
             smtp_heading: 'SMTP Ayarları'
             submit_button: '=> core.ref.save_changes'
@@ -133,13 +135,14 @@ core:
             moderate_heading: Yönetim
             new_group_button: 'Yeni Grup'
             participate_heading: Katılma
+            post_without_throttle_label: Beklemeden birçok kez yanıtlama
             read_heading: Okuma
             rename_discussions_label: 'Tartışmaları yeniden adlandır'
             reply_to_discussions_label: 'Tartışmalara yanıt ver'
             sign_up_label: Kaydol
             start_discussions_label: 'Tartışmalar başlat'
             view_discussions_label: 'Tartışmalar görüntüle'
-            view_last_seen_at_label: 'Son görülme zamanını görüntüle'
+            view_last_seen_at_label: 'Her zaman son görülme zamanını görüntüle'
             view_post_ips_label: 'Gönderilerde IP adresini görüntüle'
             view_user_list_label: 'Kullanıcı listesini görüntüle'
         settings:
