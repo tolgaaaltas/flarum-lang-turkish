@@ -15,6 +15,7 @@ composer require tolgaaaltas/flarum-lang-turkish
 - ☑ Approval
 - 🕵️ Login with Facebook
 - 👨‍💻 Login with GitHub
+- 🐦 Login with Twitter
 - 😂 Emoji
 - 🏴 Flags
 - 👍 Likes
