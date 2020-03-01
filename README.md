@@ -8,6 +8,28 @@ Turkish language extension for Flarum's core.
 composer require tolgaaaltas/flarum-lang-turkish
 ```
 
+## Core list
+
+- 🪐 Core
+- ✔ Akismet
+- ☑ Approval
+- 🕵️ Login with Facebook
+- 👨‍💻 Login with GitHub
+- 😂 Emoji
+- 🏴 Flags
+- 👍 Likes
+- 🔒Lock
+- #️⃣ Markdown
+- 💬 Mentions
+- 🆕 Pusher
+- 👨‍💼 Statistics
+- 📌 Sticky
+- 🔔 Subscriptions
+- 📨 Suspend
+- 🏷️ Tags
+- 🛑 Spamblock
+- ✅ Validation
+
 ## Usage
 
 ```
