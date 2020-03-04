@@ -28,7 +28,6 @@ composer require tolgaaaltas/flarum-lang-turkish
 - 🔔 Subscriptions
 - 📨 Suspend
 - 🏷️ Tags
-- 🛑 Spamblock
 - ✅ Validation
 
 ## Usage
