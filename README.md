@@ -1,4 +1,4 @@
-# 🇹🇷 Flarum Core Turkish Language Pack
+# 🇹🇷 Turkish Core Experience Pack for Flarum
 
 Turkish language extension for Flarum's core.
 
