@@ -26,7 +26,7 @@
             "title": "Turkish Core Experience Pack",
             "icon": {
                 "image": "core.svg",
-                "backgroundColor": "#00247d",
+                "backgroundColor": "#ffffff",
                 "backgroundSize": "cover",
                 "backgroundPosition": "center"
             }
