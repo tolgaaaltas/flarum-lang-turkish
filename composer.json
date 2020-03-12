@@ -25,7 +25,7 @@
         "flarum-extension": {
             "title": "Turkish Core Experience Pack",
             "icon": {
-                "image": "icon.svg",
+                "image": "core.svg",
                 "backgroundColor": "#00247d",
                 "backgroundSize": "cover",
                 "backgroundPosition": "center"
