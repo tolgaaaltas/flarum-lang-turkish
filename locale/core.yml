@@ -52,7 +52,7 @@ core:
         edit_group:
             color_label: '=> core.ref.color'
             delete_button: 'Grubu Sil'
-            delete_confirmation: 'Bu grubu silmek istediğine emin misin? Grup üyeleri silinmeyecek.'
+            delete_confirmation: 'Bu grubu silmek istediğine emin misin? Kullanıcıların gönderileri SİLİNMEYECEK.'
             delete_error_message: "<i>{username} ({email})</i> silinmesi başarısız oldu"
             delete_success_message: "<i>{username} ({email})</i> başarıyla silindi"
             icon_label: '=> core.ref.icon'
