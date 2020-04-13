@@ -286,7 +286,7 @@ core:
             sign_up_text: 'Hesabın yok mu? <a> Kaydol </a>'
             submit_button: '=> core.ref.log_in'
             title: '=> core.ref.log_in'
-            username_or_email_placeholder: 'Kullanıcı Adı ya da E-posta'
+            username_or_email_placeholder: 'Kullanıcı Adı ya da E-Posta'
         notifications:
             discussion_renamed_text: '{username} başlığı değiştirdi'
             empty_text: 'Bildirim Yok'
