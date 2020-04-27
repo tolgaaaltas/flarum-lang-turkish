@@ -55,6 +55,7 @@ core:
             delete_confirmation: 'Bu grubu silmek istediğine emin misin? Kullanıcıların gönderileri SİLİNMEYECEK.'
             delete_error_message: "<i>{username} ({email})</i> silinmesi başarısız oldu"
             delete_success_message: "<i>{username} ({email})</i> başarıyla silindi"
+            hide_label: Forumda gizle
             icon_label: '=> core.ref.icon'
             icon_text: '=> core.ref.icon_text'
             name_label: İsim
@@ -142,6 +143,7 @@ core:
             sign_up_label: Kaydol
             start_discussions_label: 'Tartışmalar başlat'
             view_discussions_label: 'Tartışmalar görüntüle'
+            view_hidden_groups_label: Gizli grup simgelerini göster
             view_last_seen_at_label: 'Her zaman son görülme zamanını görüntüle'
             view_post_ips_label: 'Gönderilerde IP adresini görüntüle'
             view_user_list_label: 'Kullanıcı listesini görüntüle'
@@ -296,8 +298,10 @@ core:
             tooltip: '=> core.ref.notifications'
         post_controls:
             delete_button: '=> core.ref.delete'
+            delete_confirmation: "Bu gönderiyi sonsuza kadar silmek istediğinize emin misiniz? Bu eylem geri alınamaz."
             delete_forever_button: '=> core.ref.delete_forever'
             edit_button: '=> core.ref.edit'
+            hide_confirmation: "Bu gönderiyi silmek istediğinize emin misiniz?"
             restore_button: '=> core.ref.restore'
         post_scrubber:
             now_link: Şimdi
