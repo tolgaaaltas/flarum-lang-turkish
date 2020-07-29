@@ -28,8 +28,8 @@ core:
         basics:
             all_discussions_label: '=> core.ref.all_discussions'
             default_language_heading: 'Varsayılan Dil'
-            display_name_heading: Kullanıcı Görünen Adı
-            display_name_text: Kullanıcılar için görünen adı seçin. Varsayılan olarak kullanıcı adı gösterilir.
+            display_name_heading: Görünen Kullanıcı Adı
+            display_name_text: Kullanıcıların görünen adları için kullanılması gereken formatı seçin. Varsayılan olarak, kullanıcı adı gösterilir.
             forum_description_heading: 'Forum Açıklaması'
             forum_description_text: 'Topluluğunu tanımlayan kısa bir veya iki cümle gir. Bu meta etiketine eklenecek ve arama motorlarında görünecektir.'
             forum_title_heading: 'Forum Başlığı'
@@ -80,17 +80,15 @@ core:
             mail_mailgun_domain_label: Alanadı
             mail_mailgun_region_label: Bölge
             mail_mailgun_secret_label: 'Gizli anahtar'
-            mail_mandrill_secret_label: 'Gizli anahtar'
             mail_password_label: '=> core.ref.password'
             mail_port_label: Port
-            mail_ses_key_label: Anahtar
-            mail_ses_region_label: Bölge
-            mail_ses_secret_label: Gizli
             mail_username_label: '=> core.ref.username'
             mailgun_heading: 'Mailgun Ayarları'
-            mandrill_heading: 'Mandrill Ayarları'
             not_sending_message: Flarum şu anda elektronik posta gönderemiyor. Bunun sebebi seçilen sürücü veya yapılandırma hatası olabilir.
-            ses_heading: 'SES Ayarları'
+            send_test_mail_button: Gönder
+            send_test_mail_heading: Test Postası Gönder
+            send_test_mail_success: Test postası başarıyla gönderildi!
+            send_test_mail_text: Bu, yukarıdaki yapılandırmayı kullanarak e-postanıza bir posta gönderir, {email}.
             smtp_heading: 'SMTP Ayarları'
             submit_button: '=> core.ref.save_changes'
             text: 'Forumunun e-posta göndermesi için sürücüyü, ayarları ve adresleri ayarla.'
@@ -280,6 +278,7 @@ core:
             cannot_start_discussion_button: 'Tartışma Başlatamazsın'
             mark_all_as_read_confirmation: 'Tüm tartışmaları okundu olarak işaretlemek istediğinden emin misin?'
             mark_all_as_read_tooltip: '=> core.ref.mark_all_as_read'
+            meta_title_text: => core.ref.all_discussions
             refresh_tooltip: Yenile
             start_discussion_button: '=> core.ref.start_a_discussion'
         log_in:
@@ -467,3 +466,107 @@ core:
             new_password_label: 'Yeni Şifre'
             submit_button: '=> core.ref.save_changes'
             title: '=> core.ref.reset_your_password'
+     # Translations in this namespace are used in messages output by the API.
+      api:
+        invalid_username_message: "The username may only contain letters, numbers, and dashes."
+    
+      # Translations in this namespace are used in emails sent by the forum.
+      email:
+    
+        # These translations are used in emails sent when users register new accounts.
+        activate_account:
+          subject: Activate Your New Account
+          body: |
+            Hey {username}!
+            Someone (hopefully you!) has signed up to {forum} with this email address.
+            If this was you, simply click the following link and your account will be activated:
+            {url}
+            If you did not sign up, please ignore this email.
+        # These translations are used in emails sent when users change their email address.
+        confirm_email:
+          subject: Confirm Your New Email Address
+          body: |
+            Hey {username}!
+            Someone (hopefully you!) has changed their email address on {forum} to this one.
+            If this was you, simply click the following link and your email will be confirmed:
+            {url}
+            If this was not you, please ignore this email.
+        # These translations are used in emails sent when users ask to reset their passwords.
+        reset_password:
+          subject: => core.ref.reset_your_password
+          body: |
+            Hey {username}!
+            Someone (hopefully you!) has submitted a forgotten password request for your account on {forum}.
+            If this was you, click the following link to reset your password:
+            {url}
+            If you do not wish to change your password, just ignore this email and nothing will happen.
+        # These translations are used when testing mailing configuration
+        send_test:
+          subject: Flarum Email Test
+          body: |
+            Hey {username}!
+            This is a test email to confirm that your Flarum email configuration is working properly.
+            If this was you, this email means that your configuration works!
+            If this was not you, please ignore this email.
+      ##
+      # REUSED TRANSLATIONS - These keys should not be used directly in code!
+      ##    
+
+      # Translations in this namespace are referenced by two or more unique keys.
+      ref:
+        all_discussions: Tüm Tarışmalar
+        change_email: Change Email
+        change_password: Change Password
+        color: Color                                 # Referenced by flarum-tags.yml
+        confirm_password: Confirm Password
+        confirmation_email_sent: "We've sent a confirmation email to {email}. If it doesn't arrive soon, check your spam folder."
+        custom_footer_text: Add HTML to be displayed at the very bottom of the page.
+        custom_footer_title: Edit Custom Footer
+        custom_header_text: "Add HTML to be displayed at the very top of the page, above Flarum's own header."
+        custom_header_title: Edit Custom Header
+        delete: Sil
+        delete_forever: Kalıcı Olarak Sil
+        discussions: Tartışmalar                     # Referenced by flarum-statistics.yml
+        edit: Düzenle
+        email: E-Posta
+        icon: Simge
+        icon_text: "Herhangi bir <a>FontAwesome</a> simge adını <code>fas fa-</code> öneki <em>dahil</em> olarak girin."
+        load_more: Daha Fazla
+        log_in: Giriş Yap
+        log_out: Çıkış Yap
+        mark_all_as_read: Tümünü Okundu Olarak İşaretle
+        next_page: Sonraki Sayfa
+        notifications: Bildirimler
+        okay: Tamam                                     # Referenced by flarum-tags.yml
+        password: Şifre
+        posts: Gönderiler                                 # Referenced by flarum-statistics.yml
+        previous_page: Önceki Sayfa
+        remove: Kaldır
+        rename: Yeniden adlandır
+        reply: Yanıtla                                 # Referenced by flarum-mentions.yml
+        reset_your_password: Şifreni Sıfırla
+        restore: Yenile
+        save_changes: Değişikleri Kaydet                   # Referenced by flarum-suspend.yml, flarum-tags.yml
+        settings: Ayarlar
+        sign_up: Kaydol
+        some_others: "{count} diğer|{count} diğer"  # Referenced by flarum-likes.yml, flarum-mentions.yml
+        start_a_discussion: Bir Tartışma Başlat
+        username: Kullanıcı adı
+        users: Kullanıcılar                                 # Referenced by flarum-statistics.yml
+        write_a_reply: Bir yanıt yaz...
+        you: Sen                                     # Referenced by flarum-likes.yml, flarum-mentions.yml    
+
+      ##
+      # GROUP NAMES - These keys are translated at the back end.
+      ##
+
+      # Translations in this namespace are used to translate default group names.
+      group:
+        admin: Yönetici
+        admins: Yöneticiler
+        guest: Ziyaretçi
+        guests: Ziyaretçiler
+        member: Üye
+        members: Üyeler
+        mod: Moderatör
+        mods: Moderatörler
