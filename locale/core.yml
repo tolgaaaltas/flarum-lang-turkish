@@ -32,6 +32,8 @@ core:
     basics:
       all_discussions_label: '=> core.ref.all_discussions'
       default_language_heading: 'Varsayılan Dil'
+      display_name_heading: 'Görünen Kullanıcı Adı'
+      display_name_text: 'Kullanıcıların görünen adları için kullanılması gereken tercihi seçin. Varsayılan olarak kullanıcı adı gösterilir.'
       forum_description_heading: 'Forum Açıklaması'
       forum_description_text: 'Topluluğunu tanımlayan kısa bir veya iki cümle gir. Bu meta etiketine eklenecek ve arama motorlarında görünecektir.'
       forum_title_heading: 'Forum Başlığı'
@@ -57,6 +59,7 @@ core:
       color_label: '=> core.ref.color'
       delete_button: 'Grubu Sil'
       delete_confirmation: 'Bu grubu silmek istediğine emin misin? Grup üyeleri silinmeyecek.'
+      hide_label: 'Forumda gizle'
       icon_label: '=> core.ref.icon'
       icon_text: '=> core.ref.icon_text'
       name_label: İsim
@@ -77,6 +80,7 @@ core:
       mail_encryption_label: Şifreleme
       mail_host_label: Sunucu
       mail_mailgun_domain_label: Alanadı
+      mail_mailgun_region_label: Bölge
       mail_mailgun_secret_label: 'Gizli anahtar'
       mail_mandrill_secret_label: 'Gizli anahtar'
       mail_password_label: '=> core.ref.password'
@@ -87,6 +91,11 @@ core:
       mail_username_label: '=> core.ref.username'
       mailgun_heading: 'Mailgun Ayarları'
       mandrill_heading: 'Mandrill Ayarları'
+      not_sending_message: 'Flarum şu anda e-posta göndermiyor. Bunun nedeni seçilen sürücü veya yapılandırmasındaki hatalar olabilir.'
+      send_test_mail_button: Gönder
+      send_test_mail_heading: 'Test Postası Gönder'
+      send_test_mail_success: 'Test postası başarıyla gönderildi!'
+      send_test_mail_text: 'Bu, yukarıdaki yapılandırma ayarları ile {email} adresine gönderilecektir.'
       ses_heading: 'SES Ayarları'
       smtp_heading: 'SMTP Ayarları'
       submit_button: '=> core.ref.save_changes'
@@ -126,12 +135,14 @@ core:
       moderate_heading: Yönetim
       new_group_button: 'Yeni Grup'
       participate_heading: Katılma
+      post_without_throttle_label: 'Beklemeden birçok kez yanıtla'
       read_heading: Okuma
       rename_discussions_label: 'Tartışmaları yeniden adlandır'
       reply_to_discussions_label: 'Tartışmalara yanıt ver'
       sign_up_label: Kaydol
       start_discussions_label: 'Tartışmalar başlat'
       view_discussions_label: 'Tartışmalar görüntüle'
+      view_hidden_groups_label: 'Gizli kullanıcı grubu rozetlerini göster'
       view_last_seen_at_label: 'Son görülme zamanını görüntüle'
       view_post_ips_label: 'Gönderilerde IP adresini görüntüle'
       view_user_list_label: 'Kullanıcı listesini görüntüle'
@@ -161,6 +172,9 @@ core:
     reset_password:
       body: 'Hey {username} !\n\nBirisi (umarım sensindir!) {forum} sitesindeki hesabın için şifre sıfırlama talebinde bulundu.\n\n Bu sen isen, şifreni sıfırlamak için aşağıdaki bağlantıyı tıkla: \n {url} \n \n Şifreni değiştirmek istemiyorsan, bu e-postayı dikkate alma; hiçbir şey olmayacak. \n'
       subject: '=> core.ref.reset_your_password'
+    send_test:
+      body: "Merhaba {username}!\n\nBu, Flarum elektronik posta ayarlarının düzgün gerçekleştirildiğine dair bir iletidir.\n\nEğer bu senin tarafından gönderildiyse her şey yolunda demektir.\n\nEğer bu senin tarafından gönderilmediyse görmezden gelebilirsin.\n"
+      subject: 'Flarum Test Postası'
   forum:
     change_email:
       confirm_password_placeholder: '=> core.ref.confirm_password'
@@ -245,6 +259,7 @@ core:
       cannot_start_discussion_button: 'Tartışma Başlatamazsın'
       mark_all_as_read_confirmation: 'Tüm tartışmaları okundu olarak işaretlemek istediğinden emin misin?'
       mark_all_as_read_tooltip: '=> core.ref.mark_all_as_read'
+      meta_title_text: '=> core.ref.all_discussions'
       refresh_tooltip: Yenile
       start_discussion_button: '=> core.ref.start_a_discussion'
     index_sort:
@@ -275,8 +290,10 @@ core:
       number_tooltip: 'Gönderi #{number}'
     post_controls:
       delete_button: '=> core.ref.delete'
+      delete_confirmation: 'Bu gönderiyi kalıcı olarak silmek istediğinize emin misiniz? Bu işlem geri alınamaz.'
       delete_forever_button: '=> core.ref.delete_forever'
       edit_button: '=> core.ref.edit'
+      hide_confirmation: 'Bu gönderiyi silmek istediğinize emin misiniz?'
       restore_button: '=> core.ref.restore'
     post_scrubber:
       now_link: Şimdi
@@ -352,7 +369,9 @@ core:
     badge:
       hidden_tooltip: Gizli
     error:
+      dependent_extensions_message: '{extension} uzantısı şu uzantı kapanmadan önce kapatılamaz: {extensions}'
       generic_message: 'Oops! Bir şeyler yanlış gitti. Lütfen sayfayı yenileyin ve tekrar deneyin.'
+      missing_dependencies_message: '{extension} şu uzantı aktif edilmeden önce aktif edilemez: {extensions}'
       not_found_message: 'İstenen kaynak bulunamadı.'
       permission_denied_message: 'Bunu yapmaya yetkiniz bulunmuyor.'
       rate_limit_exceeded_message: 'Biraz fazla hızlı gidiyorsun. Lütfen birkaç saniye içinde tekrar dene.'
@@ -422,6 +441,8 @@ core:
       not_authenticated: 'Bu sayfaya erişim izniniz bulunmuyor. Giriş yaptıktan sonra tekrar deneyin.'
       not_found: 'Aradığınız sayfa bulunamadı.'
       not_found_return_link: '{forum} forumuna geri dön'
+      permission_denied: 'Bu sayfaya erişmek için yetkiniz bulunmuyor.'
+      unknown: 'Sayfa yüklenmeye çalışırken bir hata meydana geldi.'
     index:
       all_discussions_heading: '=> core.ref.all_discussions'
       next_page_button: '=> core.ref.next_page'
