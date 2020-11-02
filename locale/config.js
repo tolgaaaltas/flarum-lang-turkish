@@ -32,6 +32,4 @@ dayjs.locale({
     yy: '%d yıl'
   },
   ordinal: n => `${n}.`
-}
-
-dayjs.locale(locale, null, true)
+}, null, false);
