@@ -135,7 +135,7 @@ core:
       moderate_heading: Yönetim
       new_group_button: 'Yeni Grup'
       participate_heading: Katılma
-      post_without_throttle_label: 'Beklemeden birçok kez yanıtla'
+      post_without_throttle_label: 'Beklemeden birden çok kez yanıtlayın'
       read_heading: Okuma
       rename_discussions_label: 'Tartışmaları yeniden adlandır'
       reply_to_discussions_label: 'Tartışmalara yanıt ver'
@@ -167,10 +167,10 @@ core:
       body: "Hey {username}!\n\nBirisi (umarım sensindir!) bu e-posta hseabı ile {forum} sitesine kaydoldu.\n\nBu sen isen, hesabını aktifleştirmek için aşağıdaki bağlantıyı tıkla:\n{url}\n\nEğer sen kaydolmadıysan, bu e-postayı dikkate alma.\n"
       subject: 'Yeni Hesabını Etkinleştir'
     confirm_email:
-      body: 'Hey {username} !\n\nBirisi (umarım sensindir!) {forum} sitesindeki hesabının e-posta adresini değiştirdi.\n\n Bu sen isen, e-postanı doğrulamak için aşağıdaki bağlantıyı tıkla: \n {url} \n \n Şifreni değiştirmek istemiyorsan, bu e-postayı dikkate alma. \n'
+      body: "Hey {username} !\n\nBirisi (umarım sensindir!) {forum} sitesindeki hesabının e-posta adresini değiştirdi.\n\nBu sen isen, e-postanı doğrulamak için aşağıdaki bağlantıyı tıkla: \n{url} \n\nŞifreni değiştirmek istemiyorsan, bu e-postayı dikkate alma.\n"
       subject: 'Yeni E-posta Adresini Doğrula'
     reset_password:
-      body: 'Hey {username} !\n\nBirisi (umarım sensindir!) {forum} sitesindeki hesabın için şifre sıfırlama talebinde bulundu.\n\n Bu sen isen, şifreni sıfırlamak için aşağıdaki bağlantıyı tıkla: \n {url} \n \n Şifreni değiştirmek istemiyorsan, bu e-postayı dikkate alma; hiçbir şey olmayacak. \n'
+      body: "Hey {username} !\n\nBirisi (umarım sensindir!) {forum} sitesindeki hesabın için şifre sıfırlama talebinde bulundu.\n\nBu sen isen, şifreni sıfırlamak için aşağıdaki bağlantıyı tıkla:\n{url}\n\nŞifreni değiştirmek istemiyorsan, bu e-postayı dikkate alma; hiçbir şey olmayacak.\n"
       subject: '=> core.ref.reset_your_password'
     send_test:
       body: "Merhaba {username}!\n\nBu, Flarum elektronik posta ayarlarının düzgün gerçekleştirildiğine dair bir iletidir.\n\nEğer bu senin tarafından gönderildiyse her şey yolunda demektir.\n\nEğer bu senin tarafından gönderilmediyse görmezden gelebilirsin.\n"
@@ -352,7 +352,7 @@ core:
       delete_button: '=> core.ref.delete'
       delete_confirmation: 'Bu kullanıcıyı silmek istediğinize emin misiniz? Kullanıcının tüm gönderileri silinecek.'
       delete_error_message: '<i>{username} ({email})</i> adlı kullanıcının silinmesi başarısız oldu'
-      delete_success_message: '''<i>{username} ({email}) silindi'''
+      delete_success_message: '<i>{username} ({email})</i> silindi'
       edit_button: '=> core.ref.edit'
     user_email_confirmation:
       alert_message: '=> core.ref.confirmation_email_sent'
