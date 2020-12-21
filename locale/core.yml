@@ -81,6 +81,7 @@ core:
       title: '=> core.ref.custom_header_title'
     email:
       addresses_heading: Adresler
+      description: 'Forumunuzun e-posta göndermek için kullanacağı sürücüyü, ayarları ve adresleri yapılandırın.'
       driver_heading: 'Sürücü Seç'
       driver_label: Sürücü
       from_label: Gönderen
@@ -108,27 +109,63 @@ core:
       smtp_heading: 'SMTP Ayarları'
       submit_button: '=> core.ref.save_changes'
       text: 'Forumunun e-posta göndermesi için sürücüyü, ayarları ve adresleri ayarla.'
+      title: '=> core.ref.email'
+    extension:
+      confirm_uninstall: 'Kaldırma işlemi, uzantı ile ilgili tüm veritabanı girişlerini kaldıracaktır. Devam etmek istediğine emin misin?'
+      disabled: 'Devre dışı'
+      enable_to_see: 'Ayarları görüntülemek ve değiştirmek için uzantıyı etkinleştirin.'
+      enabled: Etkin
+      info_links:
+        discuss: Tartışma
+        documentation: Dokümantasyon
+        donate: Bağış
+        source: Kaynak
+        support: Destek
+        website: Site
+      no_permissions: 'Bu uzantının izni yok.'
+      no_settings: 'Bu uzantının ayarları yok.'
+      open_modal: 'Ayarları aç'
+      permissions_title: İzinler
+      saved_message: 'Değişiklikleriniz kaydedildi.'
+      uninstall_button: Kaldır
     extensions:
       add_button: 'Uzantı Ekle'
       settings_button: '=> core.ref.settings'
       uninstall_button: 'Yüklemeyi Kaldır'
     header:
+      get_help: 'Yardım Al'
       log_out_button: '=> core.ref.log_out'
     loading:
       title: 'Lütfen Bekleyin...'
     nav:
-      appearance_button: Görünüm
+      appearance_button: '=> core.admin.appearance.title'
       appearance_text: 'Forumunun renklerini, logolarını ve diğer değişkenlerini özelleştir.'
-      basics_button: 'Temel Öğeler'
+      appearance_title: '=> core.admin.appearance.description'
+      basics_button: '=> core.admin.basics.title'
       basics_text: 'Forum başlığını, dilini ve diğer temel ayarları yap.'
-      dashboard_button: 'Gösterge Paneli'
+      basics_title: '=> core.admin.basics.description'
+      categories:
+        authentication: Doğrulama
+        core: 'Çekirdek Yapılandırması'
+        discussion: Tartışma
+        feature: Özellikler
+        formatting: Biçimlendirme
+        language: Diller
+        moderation: Moderasyon
+        other: 'Diğer Uzantılar'
+        theme: Temalar
+      dashboard_button: '=> core.admin.dashboard.title'
       dashboard_text: 'Bir bakışta forumun.'
+      dashboard_title: '=> core.admin.dashboard.description'
       email_button: '=> core.ref.email'
       email_text: 'Forumunun e-posta ayarlarını yapılandır.'
+      email_title: '=> core.admin.email.description'
       extensions_button: Uzantılar
       extensions_text: 'Forumunuza ekstra işlevsellikler ekleyin ve özelleştirin.'
-      permissions_button: İzinler
+      permissions_button: '=> core.admin.permissions.title'
       permissions_text: 'Kimlerin görebileceğini ve ne yapabileceğini yapılandırın.'
+      permissions_title: '=> core.admin.permissions.description'
+      search_placeholder: 'Uzantıları Ara'
     permissions:
       allow_post_editing_label: 'Gönderi düzenlemeye izin ver'
       allow_renaming_label: 'Yeniden adlandırmaya izin ver'
@@ -137,6 +174,7 @@ core:
       delete_discussions_label: 'Tartışmaları sil'
       delete_posts_forever_label: 'Gönderileri kalıcı olarak sil'
       delete_posts_label: 'Gönderileri sil'
+      description: 'Kimin ne görebileceğini ve ne yapabileceğini yapılandırın.'
       edit_posts_label: 'Gönderileri düzenle'
       edit_users_label: 'Kullanıcıları düzenle'
       global_heading: Genel
@@ -149,6 +187,7 @@ core:
       reply_to_discussions_label: 'Tartışmalara yanıt ver'
       sign_up_label: Kaydol
       start_discussions_label: 'Tartışmalar başlat'
+      title: İzinler
       view_discussions_label: 'Tartışmalar görüntüle'
       view_hidden_groups_label: 'Gizli kullanıcı grubu rozetlerini göster'
       view_last_seen_at_label: 'Son görülme zamanını görüntüle'
