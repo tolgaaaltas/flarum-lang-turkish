@@ -111,6 +111,7 @@ core:
       text: 'Forumunun e-posta göndermesi için sürücüyü, ayarları ve adresleri ayarla.'
       title: '=> core.ref.email'
     extension:
+      configure_scopes: 'Kapsamları Yapılandır'
       confirm_uninstall: 'Kaldırma işlemi, uzantı ile ilgili tüm veritabanı girişlerini kaldıracaktır. Devam etmek istediğine emin misin?'
       disabled: 'Devre dışı'
       enable_to_see: 'Ayarları görüntülemek ve değiştirmek için uzantıyı etkinleştirin.'
@@ -176,6 +177,8 @@ core:
       delete_posts_label: 'Gönderileri sil'
       description: 'Kimin ne görebileceğini ve ne yapabileceğini yapılandırın.'
       edit_posts_label: 'Gönderileri düzenle'
+      edit_users_credentials_label: 'Kullanıcı kimlik bilgilerini düzenle'
+      edit_users_groups_label: 'Kullanıcı gruplarını düzenle'
       edit_users_label: 'Kullanıcıları düzenle'
       global_heading: Genel
       moderate_heading: Yönetim
@@ -203,6 +206,7 @@ core:
       signup_closed_button: Kapalı
       signup_open_button: Açık
     settings:
+      saved_message: 'Değişiklikleriniz kaydedildi.'
       submit_button: '=> core.ref.save_changes'
     upload_image:
       remove_button: '=> core.ref.remove'
@@ -279,6 +283,7 @@ core:
       email_heading: '=> core.ref.email'
       email_label: '=> core.ref.email'
       groups_heading: Gruplar
+      nothing_available: 'Şu anda düzenleyebileceğiniz hiçbir şey yok.'
       password_heading: '=> core.ref.password'
       password_label: '=> core.ref.password'
       set_password_label: 'Yeni şifre ayarla'
