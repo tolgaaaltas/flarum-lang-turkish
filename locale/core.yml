@@ -236,7 +236,7 @@ core:
       title: '=> core.ref.change_email'
     change_password:
       send_button: 'Şifre sıfırlama e-postası gönder'
-      text: 'Aşağıdaki butona tıklayın ve şifrenizi değiştirmek için e-postanızı kontrol edin.'
+      text: 'Aşağıdaki düğmeye tıklayın ve şifrenizi değiştirmek için e-postanızı kontrol edin.'
       title: '=> core.ref.change_password'
     composer:
       close_tooltip: Kapat
