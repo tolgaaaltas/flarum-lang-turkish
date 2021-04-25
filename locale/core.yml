@@ -167,6 +167,8 @@ core:
       permissions_text: 'Kimlerin görebileceğini ve ne yapabileceğini yapılandırın.'
       permissions_title: '=> core.admin.permissions.description'
       search_placeholder: 'Uzantıları Ara'
+      userlist_button: '=> core.admin.users.title'
+      userlist_title: '=> core.admin.users.description'
     permissions:
       allow_post_editing_label: 'Gönderi düzenlemeye izin ver'
       allow_renaming_label: 'Yeniden adlandırmaya izin ver'
@@ -211,6 +213,35 @@ core:
     upload_image:
       remove_button: '=> core.ref.remove'
       upload_button: 'Bir görüntü seç...'
+    users:
+      description: 'Forumunuzdaki tüm kullanıcıların sayfalandırılmış bir listesi.'
+      grid:
+        columns:
+          edit_user:
+            button: '=> core.ref.edit'
+            title: '=> core.ref.edit_user'
+            tooltip: 'Düzenle {username}'
+          email:
+            title: '=> core.ref.email'
+            visibility_hide: 'E-posta adresini gizle'
+            visibility_show: 'E-posta adresini göster'
+          group_badges:
+            no_badges: Yok
+            title: Gruplar
+          join_time:
+            title: Katıldı
+          user_id:
+            title: ID
+          username:
+            profile_link_tooltip: '{username} kullanıcısının profilini ziyaret et'
+            title: '=> core.ref.username'
+        invalid_column_content: Geçersiz
+      pagination:
+        back_button: 'Önceki sayfa'
+        next_button: 'Sonraki sayfa'
+        page_counter: '{total} sayfadan {current}'
+      title: '=> core.ref.users'
+      total_users: 'Toplam kullanıcılar: {count}'
   api:
     invalid_username_message: 'Kullanıcı adı sadece harfler, rakamlar ve kısa çizgiler içerebilir.'
   email:
@@ -432,6 +463,18 @@ core:
       hidden_tooltip: Gizli
     dropdown:
       toggle_dropdown_accessible_label: 'Açılır menüyü aç / kapat'
+    edit_user:
+      activate_button: 'Aktif Kullanıcılar'
+      email_heading: '=> core.ref.email'
+      email_label: '=> core.ref.email'
+      groups_heading: Gruplar
+      password_heading: '=> core.ref.password'
+      password_label: '=> core.ref.password'
+      set_password_label: 'Yeni şifre ayarla'
+      submit_button: '=> core.ref.save_changes'
+      title: '=> core.ref.edit_user'
+      username_heading: '=> core.ref.username'
+      username_label: '=> core.ref.username'
     error:
       dependent_extensions_message: '{extension} uzantısı şu uzantı kapanmadan önce kapatılamaz: {extensions}'
       generic_message: 'Oops! Bir şeyler yanlış gitti. Lütfen sayfayı yenileyin ve tekrar deneyin.'
@@ -465,6 +508,7 @@ core:
     delete_forever: 'Kalıcı Olarak Sil'
     discussions: Tartışmalar
     edit: Düzenle
+    edit_user: 'Kullanıcıyı Düzenle'
     email: E-posta
     icon: Simge
     icon_text: 'Herhangi bir <a>FontAwesome</a> simgesi adını <code>fas fa-</code> <em>öneki dahil</em> olarak girin.'
