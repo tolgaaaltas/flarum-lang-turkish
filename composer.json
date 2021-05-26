@@ -49,9 +49,6 @@
                 "backgroundPosition": "center"
             }
         },
-        "flagrow": {
-			"discuss": "https://discuss.flarum.org/d/21356-flarum-core-turkish-language-pack"
-		},
         "flarum-locale": {
             "code": "tr",
             "title": "Turkish"
