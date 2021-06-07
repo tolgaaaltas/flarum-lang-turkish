@@ -1,3 +1,7 @@
+# 🚨 Important reminder
+
+This package has been abandoned. Please install [flarum-lang/turkish](https://github.com/flarum-lang/turkish).
+
 # 🇹🇷 Turkish Core Experience Pack for Flarum
 
 Turkish language extension for Flarum's core.
